@@ -89,11 +89,121 @@
    padding-top: 35px;
 }
 
-.flax_header, .about, .flex_footer {
+.flax_header, .about, .flex_footer, .form, .box {
    display: flex;
    justify-content: space-between;
    align-items: center;
    }
 .about {
    margin: 104px auto 85px;
+}
+.form__title {
+   font-weight: 700;
+   font-size: 50px;
+   line-height: 57px;
+   letter-spacing: -1.56316px;
+   color: #19191B;
+}
+.form {
+   margin-bottom: 85px;
+}
+.input {
+   width: 302px;
+   height: 60px;
+   border: 1px solid #7087FF;
+   border-radius: 10px;
+   margin-right: 39px;
+   padding-left: 14px;
+   box-sizing: border-box;
+}
+.input::placeholder, .input{
+   font-weight: 700;
+   font-size: 17px;
+   line-height: 22px;
+   letter-spacing: -0.531474px;
+   color: #000000;
+}
+.input:focus {
+   outline: none;
+}
+.title_price {
+   font-weight: 700;
+   font-size: 60px;
+   line-height: 70px;
+   letter-spacing: -1.87579px;
+   color: #19191B;
+
+   width: 504px;
+   margin-bottom: 98px;
+}
+.box_price {
+   max-width: 330px;
+   background-color: #F8F8F8;
+   border-radius: 10px;
+   text-align: center;
+   padding: 34px 22px 27px;
+  
+   }
+
+.box_p {
+   margin: 0px;
+   font-weight: 400;
+   font-size: 18px;
+   letter-spacing: -0.562737px;
+   color: #696871;
+}
+.box_price > h3{
+   font-weight: 700;
+   font-size: 60px;
+   letter-spacing: -1.03448px;
+   margin: 22px 0px 28px;
+  }
+.box_price span {
+   font-size: 28px;
+}
+.ul_price {
+   padding: 0;
+   margin: 0px;
+  
+}
+.li_price {
+   list-style: none;
+   font-weight: 400;
+   line-height: 50px;
+   font-size: 17px;
+   letter-spacing: -0.531474px;
+   color: #696871;
+  
+}
+.box_button {
+   width: 285px;
+   height: 60px;
+   color: #5454D4;
+   font-weight: 700;
+   font-size: 17px;
+   line-height: 22px;
+   letter-spacing: -0.531474px;
+
+   background: #FFFFFF;
+   border: 1px solid #EAE9F2;
+   border-radius: 10px;
+   margin-top: 36px;
+}
+.box_price:hover {
+   background: #FF7143;
+   color: #FFFFFF;
+   transition: 500ms;
+   cursor: pointer;
+   ;
+}
+.box_price:hover .box_button {
+   background: #9F3919;
+   border: 0px;
+   color: #FFFFFF;
+   transition: 500ms;
+   cursor: pointer;
+}
+.box_price:hover .box_p, .box_price:hover .li_price {
+   color: white;
+   transition: 500ms;
 }
